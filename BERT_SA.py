@@ -11,6 +11,24 @@ def analyze_sentiment(text):
     confidence = result[0]['score']
     return sentiment, confidence
 
+# Inject custom CSS
+st.markdown(
+    """
+    <style>
+    .css-1emrehy.edgvbvh3 {
+        background-color: #28a745; /* Green color */
+        color: white;
+        border: none;
+    }
+
+    .css-1emrehy.edgvbvh3:hover {
+        background-color: #218838; /* Darker green for hover effect */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Streamlit app
 st.title("Sentiment Analysis App")
 
