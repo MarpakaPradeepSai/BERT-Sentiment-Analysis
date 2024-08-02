@@ -12,7 +12,7 @@ def analyze_sentiment(text):
     return sentiment, confidence
 
 # Streamlit application
-st.title('Sentiment Analysis with BERT')
+st.title('Sentiment Analysis with DistilBERT')
 
 # Text input from the user
 text = st.text_area("Enter text for sentiment analysis:", "")
