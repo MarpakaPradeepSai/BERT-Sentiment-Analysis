@@ -9,7 +9,8 @@ def analyze_sentiment(text):
     result = sentiment_analyzer(text)
     sentiment = result[0]['label']
     confidence = result[0]['score']
-    return sentiment, confidence
+    return sentiment
+    #return sentiment , confidence
 
 # Inject custom CSS for button styling
 st.markdown(
