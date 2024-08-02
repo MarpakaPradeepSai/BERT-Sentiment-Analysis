@@ -15,16 +15,13 @@ def analyze_sentiment(text):
 st.markdown(
     """
     <style>
-    .stButton > button {
+    .css-1emrehy.edgvbvh3 {
         background-color: #28a745; /* Green color */
         color: white;
         border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 5px;
     }
 
-    .stButton > button:hover {
+    .css-1emrehy.edgvbvh3:hover {
         background-color: #218838; /* Darker green for hover effect */
     }
     </style>
