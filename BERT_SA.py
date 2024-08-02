@@ -15,7 +15,12 @@ def analyze_sentiment(text):
 st.title("Sentiment Analysis App")
 
 user_input = st.text_area("Enter text here:")
-if user_input:
-    sentiment, confidence = analyze_sentiment(user_input)
-    st.write(f"Sentiment: {sentiment}")
-    st.write(f"Confidence: {confidence:.2f}")
+
+# Add a button to analyze sentiment
+if st.button('Analyze Sentiment'):
+    if user_input:
+        sentiment, confidence = analyze_sentiment(user_input)
+        st.write(f"Sentiment: {sentiment}")
+        st.write(f"Confidence: {confidence:.2f}")
+    else:
+        st.write("Please enter some text.")
