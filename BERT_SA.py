@@ -11,16 +11,11 @@ def analyze_sentiment(text):
     confidence = result[0]['score']
     return sentiment, confidence
 
-# Streamlit application
-st.title('Sentiment Analysis with DistilBERT')
+# Streamlit app
+st.title("Sentiment Analysis App")
 
-# Text input from the user
-text = st.text_area("Enter text for sentiment analysis:", "")
-
-if text:
-    # Perform sentiment analysis
-    sentiment, confidence = analyze_sentiment(text)
-    
-    # Display the results
+user_input = st.text_area("Enter text here:")
+if user_input:
+    sentiment, confidence = analyze_sentiment(user_input)
     st.write(f"Sentiment: {sentiment}")
     st.write(f"Confidence: {confidence:.2f}")
